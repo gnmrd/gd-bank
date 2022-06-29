@@ -1,0 +1,93 @@
+:root {
+  --mainbackground: #24292d;
+  --mainfont: #f6f6f8;
+  --containerbackground: #2f363e;
+  --emphasiscolor: #0a7460;
+  --lightemphasiscolor: #86fee8;
+}
+
+body {
+  background-color: var(--mainbackground);
+  color: var(--mainfont);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  font-family: "Lato";
+}
+
+input {
+  background-color: var(--mainbackground);
+  color: var(--mainfont);
+
+  padding: 10px;
+  border-radius: 5px 0 0px 5px;
+  border: none;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main-button {
+  background-color: var(--emphasiscolor);
+  color: var(--mainfont);
+
+  height: 35px;
+  border-radius: 0px 5px 5px 0;
+  cursor: pointer;
+  border: none;
+  transition: 0.4s ease-in-out;
+}
+
+.main-button:hover {
+  transition: 0.4s ease-in-out;
+  background-color: var(--lightemphasiscolor);
+  color: var(--mainbackground);
+}
+
+.connect-button {
+  background-color: var(--emphasiscolor);
+  color: var(--mainfont);
+
+  height: 50px;
+  width: 200px;
+  margin: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  transition: 0.4s ease-in-out;
+}
+
+.connect-button:hover {
+  transition: 0.4s ease-in-out;
+  transform: scale(1.05);
+  background-color: var(--lightemphasiscolor);
+  color: var(--mainbackground);
+}
+
+.deposit-container {
+  background-color: var(--containerbackground);
+
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 5px 10px 8px rgb(24, 23, 23);
+}
+
+.headline {
+  font-size: 40px;
+  font-family: 'Noto Sans TC';
+}
+
+.second-headline {
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--lightemphasiscolor);
+}
